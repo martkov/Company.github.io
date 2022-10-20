@@ -1,0 +1,165 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    background-color: cornflowerblue;
+    padding: 5%
+}
+
+.contact {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    background-color: cornflowerblue;
+}
+
+
+
+img {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.noche {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20%;
+    object-fit: cover;
+
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+    .con-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    aside {
+        flex-basis: calc(33.3% - 2rem);
+    }
+
+    article {
+        flex-basis: calc(66.7% - 2rem);
+    }
+}
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+
+}
+
+button {
+    display: block;
+    background-color: rgb(47, 67, 87);
+    padding: 15px;
+    color: #2196F3;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+
+}
+
+select {
+    display: block;
+    background-color: rgb(47, 67, 87);
+    padding: 15px;
+    color: #2196F3;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(47, 67, 87);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown-content a {
+    display: block;
+    color: aquamarine;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+.warning::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+}
+
+.warningOpt {
+    color: red;
+    font-weight: bolder;
+}
+
+
+@media (min-width:480px) {
+    .tres-columnas {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .entrada-blog {
+        flex-basis: calc(33.3% - 1rem);
+        /*calc() hace un cálculo matemático*/
+        /*Ocupa el 33% del contenedor - 1 rem para dar espacio entre columnas*/
+    }
+}

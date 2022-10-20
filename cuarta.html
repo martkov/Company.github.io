@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="icon" type="image/png" href="/src/favicon.ico" sizes="48x48">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+
+</head>
+
+<body class="contact">
+    <div class="contenedor con-sidebar">
+
+        <article>
+            <h2>Formulario de contacto</h2>
+            <div class="dropdown">
+                <button>Pagina de contacto</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Volver al inicio</a>
+                    <a href="segunda.html">Nuestra empresa</a>
+                    <a href="tercera.html">Servicios</a>
+                </div>
+            </div>
+            <img src="src/company_1920.jpg">
+
+        </article>
+        <aside>
+            <form name="form" action="" method="">
+                <div name="nombre">
+                    <label for="fname">Sus Nombres:</label><br>
+                    <input class="valida" type="text" id="fname" name="fname">
+                </div>
+                <div name="apellido">
+                    <label for="lname">Sus Apellidos:</label><br>
+                    <input class="valida" type="text" id="lname" name="lname">
+                </div>
+                <br><br>
+                <div class="dropdown">
+                    <label for="seccion">Elija la seccion a la cual dirije su mensaje:</label><br>  
+                    <select class="valida" onchange="selectFunc()">   
+                        <option class="valida" value="vacio" disabled selected hidden>Elija su opción</option>
+                        <option value="Gerencia">Administracion</option>
+                        <option value="Ventas">Ventas</option>
+                        <option value="Proveedores">Servicio tecnico las 24 horas</option>
+                    </select>
+                </div>
+                <br><br>
+                <div>
+                    <textarea class="valida" name="message" rows="10" cols="30" placeholder="Escriba aquí"></textarea>
+                </div>
+                <div>
+                    <!-- alert('Desea enviar el formulario') -->
+                    <button type="button" id="boton" type="button1" onclick="validaForm()">Envio de mensaje</button>
+                </div>
+            </form>
+        </aside>
+    </div>
+    <footer>
+        <div>
+            <button onclick="myFunction()">Go Back</button>
+            <p>Autores: Matias Lozano, Damian Ledda, Santiago Torrado & Martin Kovacic</p>
+            <p><a href="malito:Los3@gmail.com?subject=contacto por email">Los3@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+<script src="valida_form.js"></script>
+<script src="webHistoryApi.js"></script>
+
+</html>

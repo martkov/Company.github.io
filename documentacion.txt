@@ -1,0 +1,31 @@
+La pagina web es de una empresa:
+Consta de 4 paginas:
+1- Inicio
+2- Presentacion de la empresa
+3- Servicios que presta la empresa
+4- Formulario de contacto 
+
+en las 4 paginas hay una coneccion a history API para hacer un back a la pagina 
+anterior con un boton GO BACK debajo de todas las paginas
+..........................................................................
+Inicio (inicio.html)
+animacion animate__animated animate__fadeInUp en el titulo Company
+contiene un dropdown con las paginas 
+Imagen y favicon 
+Autores
+Mail de contacto
+..........................................................................
+Presentacion de la empresa ( segunda.html)
+dropdown con las paginas
+maquetado con aside, article y footer
+............................................................................
+Servicios que presta la empresa ( tercera.html)
+dropdown de las paginas
+menu hamburguesa de servcios 
+tres columnas sobre tres con boton (sin dirigir a otra pagina)
+............................................................................
+Formulario de contacto ( cuarta.html)
+dropdown de las paginas 
+con dos labels, un select y un textarea 
+con validacion de los campos obligatorios con JS 
+
